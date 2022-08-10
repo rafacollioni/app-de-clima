@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --main-color: rgb(215, 172, 255);
+    --darker-color: rgb(114, 61, 163);
+    --light-gray: rgb(226, 226, 226);    
+    --border-radius: 10px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+hr{
+    margin: 3% 0;
+    background-color: var(--light-gray);
+    opacity: 0.5;
+}
+
+h1{
+    font-size: 1.7rem
+}
+
+img{
+    width: 1.3em;
+}
+
+body{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+button:active{
+    background: var(--darker-color);
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 7%;
+    width: 55vw;
+    max-width: 450px;
+}
+
+/* Classe para Desabilitar os Itens */
+
+.disabled{
+    display: none;
+}
+
+/* ÍNICIO da Tela de Seleção de Cidade */
+
+.header{
+    display: flex;
+    align-items: center;
+    color: var(--darker-color);
+    display: flex; 
+    gap: 2%;
+}
+
+.input{
+    padding: 5%;
+    width: 100%;
+    border: var(--light-gray) solid 1px;
+    border-radius: var(--border-radius);
+}
+
+.ou{
+    text-align: center;
+    margin: 3% 0;
+}
+
+.button-section button{
+    padding: 5%;
+    text-align: center;
+    width: 100%;
+    background-color: var(--main-color);
+    border: rgb(226, 226, 226) solid 1px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+/* FIM da Tela de Seleção de Cidade */
